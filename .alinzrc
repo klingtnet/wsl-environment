@@ -3,4 +3,7 @@ export PATH=/usr/local/go/bin:$HOME/go/bin:$PATH
 export EDITOR=vim
 
 pregp ssh-agent &>/dev/null || eval $(ssh-agent -s)
+
+# if this is not set then no password prompt is shown and gpg fails to sign a commit
+export GPG_TTY=$(tty)
 pgrep gpg-agent &>/dev/null || eval $(gpg-agent --daemon --quiet)
