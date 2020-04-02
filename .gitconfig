@@ -1,0 +1,19 @@
+[user]
+	signingkey = 5E50C5D9439F1E02
+	email = alinz@fastmail.com
+	name = Andreas Linz
+[commit]
+	gpgsign = true
+[merge]
+	gpgsign = true
+	ff = false
+[tags]
+	gpgsign = true
+[alias]
+	s = status
+	co = checkout
+	p = push
+	c = commit
+	tags = tag -l
+	cap = commit --amend --patch
+	a = add
