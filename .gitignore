@@ -1,6 +1,7 @@
 /*
 # whitelist
 !/.bashrc
+!/.bash_aliases
 !/.profile
 !/.alinzrc
 !/.gitignore
