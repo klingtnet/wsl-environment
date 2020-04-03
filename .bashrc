@@ -115,3 +115,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -e ~/.local/bin/go-prompt ]; then
+	go_prompt() {
+		PS1="$(go-prompt $?)"
+	}
+	export PROMPT_COMMAND=go_prompt
+fi
